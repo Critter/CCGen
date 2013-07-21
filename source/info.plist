@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>bundleid</key>
+	<string>com.413Critter.gencc</string>
+	<key>connections</key>
+	<dict>
+		<key>0A7F94DA-8824-4BEA-892C-25D9882A4143</key>
+		<array>
+			<dict>
+				<key>destinationuid</key>
+				<string>8CB9E2DD-A4FC-4AA5-B229-88174066B821</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+			<dict>
+				<key>destinationuid</key>
+				<string>94A4FAC2-9AE7-45BC-9022-CE54B2D6621B</string>
+				<key>modifiers</key>
+				<integer>0</integer>
+				<key>modifiersubtext</key>
+				<string></string>
+			</dict>
+		</array>
+	</dict>
+	<key>createdby</key>
+	<string>413Critter</string>
+	<key>description</key>
+	<string>For testing purposes only</string>
+	<key>disabled</key>
+	<false/>
+	<key>name</key>
+	<string>Generate Credit Card Numbers</string>
+	<key>objects</key>
+	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>argumenttype</key>
+				<integer>0</integer>
+				<key>escaping</key>
+				<integer>127</integer>
+				<key>keyword</key>
+				<string>ccgen</string>
+				<key>runningsubtext</key>
+				<string>Please wait...</string>
+				<key>script</key>
+				<string>php -f ccgen.php {query}</string>
+				<key>subtext</key>
+				<string>mc | visa | discover | amex</string>
+				<key>title</key>
+				<string>Generating Credit Card Numbers</string>
+				<key>type</key>
+				<integer>0</integer>
+				<key>withspace</key>
+				<true/>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.input.scriptfilter</string>
+			<key>uid</key>
+			<string>0A7F94DA-8824-4BEA-892C-25D9882A4143</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>output</key>
+				<integer>0</integer>
+				<key>removeextension</key>
+				<false/>
+				<key>sticky</key>
+				<false/>
+				<key>text</key>
+				<string>{query} is on your clipboard!</string>
+				<key>title</key>
+				<string>CC Generator</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>8CB9E2DD-A4FC-4AA5-B229-88174066B821</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>autopaste</key>
+				<false/>
+				<key>clipboardtext</key>
+				<string></string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.clipboard</string>
+			<key>uid</key>
+			<string>94A4FAC2-9AE7-45BC-9022-CE54B2D6621B</string>
+			<key>version</key>
+			<integer>0</integer>
+		</dict>
+	</array>
+	<key>readme</key>
+	<string>These numbers are only for testing algorithms. You cannot get anything free with them</string>
+	<key>uidata</key>
+	<dict>
+		<key>0A7F94DA-8824-4BEA-892C-25D9882A4143</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>8CB9E2DD-A4FC-4AA5-B229-88174066B821</key>
+		<dict>
+			<key>ypos</key>
+			<real>60</real>
+		</dict>
+		<key>94A4FAC2-9AE7-45BC-9022-CE54B2D6621B</key>
+		<dict>
+			<key>ypos</key>
+			<real>180</real>
+		</dict>
+	</dict>
+	<key>webaddress</key>
+	<string>http://413cr.it/ter</string>
+</dict>
+</plist>
